@@ -364,6 +364,8 @@ static char kPSTCachedItemRectsKey;
         CGRect sectionFrame = section.frame;
         if (_data.horizontal) {
             sectionFrame.origin.x += contentSize.width;
+            sectionFrame.origin.y = (self.collectionView.frame.size.height - sectionFrame.size.height) / 2;
+
             contentSize.width += section.frame.size.width + section.frame.origin.x;
             contentSize.height = fmaxf(contentSize.height, sectionFrame.size.height + section.frame.origin.y + section.sectionMargins.top + section.sectionMargins.bottom);
         }else {

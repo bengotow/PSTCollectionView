@@ -8,6 +8,7 @@
 #import "PSTCollectionViewData.h"
 #import "PSTCollectionView.h"
 #import "PSTCollectionViewLayout.h"
+#import "NSIndexPath+PSTCollectionViewAdditions.h"
 
 @interface PSTCollectionViewData () {
     CGRect _validLayoutRect;
